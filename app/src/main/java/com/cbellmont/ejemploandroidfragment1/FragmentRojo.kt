@@ -5,11 +5,15 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.cbellmont.ejemploandroidfragment1.databinding.FragmentRojoBinding
 
 class FragmentRojo : Fragment() {
 
+    lateinit var binding: FragmentRojoBinding
+
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.fragment_rojo, container, false)
+        binding = FragmentRojoBinding.inflate(inflater, container, false)
+        return binding.root
     }
 
 }
