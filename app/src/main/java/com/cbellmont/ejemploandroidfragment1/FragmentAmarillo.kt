@@ -9,7 +9,7 @@ import com.cbellmont.ejemploandroidfragment1.databinding.FragmentAmarilloBinding
 import com.cbellmont.ejemploandroidfragment1.databinding.FragmentRojoBinding
 
 class FragmentAmarillo : Fragment() {
-    lateinit var binding: FragmentAmarilloBinding
+    private lateinit var binding: FragmentAmarilloBinding
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         binding = FragmentAmarilloBinding.inflate(inflater, container, false)
